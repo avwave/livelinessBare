@@ -10,9 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "async-debounce": "^0.0.0",
+    "lodash.debounce": "^4.0.8",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera.git"
+    "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera.git",
+    "use-debounce": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
