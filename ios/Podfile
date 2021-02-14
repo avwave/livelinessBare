@@ -22,10 +22,10 @@ target 'livelinessBare' do
     flipper_post_install(installer)
   end
 
-  # pod 'Firebase/Core'
-  # pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [
-  #   'FaceDetectorMLKit'
-  # ]
+  pod 'Firebase/Core'
+  pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [
+    'FaceDetectorMLKit'
+  ]
 end
 
 target 'livelinessBare-tvOS' do

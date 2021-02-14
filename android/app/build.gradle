@@ -1,5 +1,5 @@
 apply plugin: "com.android.application"
-// apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 
@@ -135,7 +135,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        missingDimensionStrategy 'react-native-camera', 'mlkit' 
+        missingDimensionStrategy 'react-native-camera', 'general' 
     }
     splits {
         abi {
@@ -192,7 +192,7 @@ dependencies {
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
     }
-    // implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
 
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
